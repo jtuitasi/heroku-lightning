@@ -50,7 +50,7 @@ var corsOptions = {
       callback(new Error('Not allowed by CORS'))
     }
   }
-}
+};
 
 // Then pass them to cors:
 app.use(cors(corsOptions));
