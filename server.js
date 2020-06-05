@@ -41,16 +41,3 @@ try {
 } catch (e) {
 	console.error("Security certs not found, HTTPS not available");
 }
-var whitelist = ('https://lotestjq.herokuapp.com');
-var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-};
-
-// Then pass them to cors:
-app.use(cors(corsOptions));
