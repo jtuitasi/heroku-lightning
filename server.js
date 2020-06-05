@@ -41,7 +41,7 @@ try {
 } catch (e) {
 	console.error("Security certs not found, HTTPS not available");
 }
-var whitelist = ['https://lotestjq.herokuapp.com/', 'https://lotestjq.herokuapp.com/myProof/wave/wave.app?mode=assetView&context=aura&height=275px&formFactor=DESKTOP&showTitle=false&showHeader=false&showSharing=false&embeddedInstanceId=ewa-12644189117128324&isS1Mobile=false&sfdcNsOrigin=https%3A%2F%2Flotestjq.herokuapp.com', 'https://sgwsteam--pocmobile.lightning.force.com']
+var whitelist = ['https://lotestjq.herokuapp.com/', 'https://lotestjq.herokuapp.com/myProof/wave/wave.app?mode=assetView&context=aura&height=275px&formFactor=DESKTOP&showTitle=false&showHeader=false&showSharing=false&embeddedInstanceId=ewa-12644189117128324&isS1Mobile=false&sfdcNsOrigin=https%3A%2F%2Flotestjq.herokuapp.com', 'https://sgwsteam--pocmobile.lightning.force.com'];
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
