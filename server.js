@@ -49,7 +49,7 @@ var corsOptions = {
     } else {
       callback(new Error('Not allowed by CORS'))
     }
-  }
+  };
 };
 
 // Then pass them to cors:
